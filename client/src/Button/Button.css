@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Sunflower:300&display=swap");
+
+.green {
+  background: #bdb246;
+  border-radius: 20px;
+
+  font-family: Sunflower;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #592e29;
+  text-transform: uppercase;
+
+  width: 295px;
+  height: 64px;
+  margin: 10px;
+}
+
+.smallgreen {
+  background: #bdb246;
+  border-radius: 20px;
+
+  font-family: Sunflower;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 15px;
+  line-height: 22px;
+
+  color: #592e29;
+  text-transform: uppercase;
+
+  width: 160px;
+  height: 50px;
+}
+
+.brown {
+  background: #8a6552;
+  border-radius: 20px;
+
+  font-family: Sunflower;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #bdb246;
+  text-transform: uppercase;
+
+  width: 295px;
+  height: 64px;
+  margin: 10px;
+}
+
+.darkbrown {
+  background: #592e29;
+  border-radius: 20px;
+
+  font-family: Sunflower;
+  font-style: normal;
+  font-weight: bolder;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #bdb246;
+  text-transform: uppercase;
+
+  width: 295px;
+  height: 64px;
+}
