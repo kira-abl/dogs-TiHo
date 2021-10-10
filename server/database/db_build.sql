@@ -16,21 +16,25 @@ CREATE TABLE answers (
   had_meds VARCHAR(50),
   meds VARCHAR(50),
   other VARCHAR(50),
+  ear_form VARCHAR(50),
+  nose_form VARCHAR(50),
   image1 VARCHAR(500),
   image2 VARCHAR(500),
   image3 VARCHAR(500),
-  image4 VARCHAR(500),
   pain1 VARCHAR(50),
   pain2 VARCHAR(50),
   pain3 VARCHAR(50),
   pain4 VARCHAR(50),
   pain5 VARCHAR(50),
   pain6 VARCHAR(50),
-  pain7 VARCHAR(50),
-  pain8 VARCHAR(50),
   score VARCHAR(50),
   position VARCHAR(50),
-  sex VARCHAR(50)
+  sex VARCHAR(50),
+  date VARCHAR(50),
+  type VARCHAR(50),
+  type_dog VARCHAR(50),
+  name VARCHAR(50)
+
 
 
 

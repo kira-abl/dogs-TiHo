@@ -177,14 +177,14 @@ console.log(array);
           array[2].link = "";
           };
 
-        if (req.body.result.question17 !== undefined) {
-          array[3].content = req.body.result.question17[0].content;
-            array[3].name = req.body.result.question17[0].name;
-          } else  {
-            array[3].content = "";
-            array[3].name = "";
-            array[3].link = "";
-            };
+        // if (req.body.result.question17 !== undefined) {
+        //   array[3].content = req.body.result.question17[0].content;
+        //     array[3].name = req.body.result.question17[0].name;
+        //   } else  {
+        //     array[3].content = "";
+        //     array[3].name = "";
+        //     array[3].link = "";
+        //     };
   // res.redirect("/");
 
 

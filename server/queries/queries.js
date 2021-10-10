@@ -37,7 +37,7 @@ const logMood = (array, body) => {
   // let time = d.toUTCString();
 
 
-const {Question1, Question40, Question401, Question402, Question403, question6, question13, question9, question14, question18, question11, question5, question4, question7, question8, question19, question21, question22, Schmerzbewertung, question24, question25, Question111, Question112, question23} = body.result;
+const {Question1, Question40, Question401, Question402, Question403, question6, question13, question9, question14, question18, question11, question5, question4, question7, question8, question19, question21, question22, Schmerzbewertung, question24, question25, Question111, Question112, question23, question1, question17, question26} = body.result;
 
 if (Question401 === true) {
    whichOp = Question402;
@@ -70,10 +70,10 @@ if (body.result['question18-Comment'] !== undefined) {
   console.log("At queries", whichOp, daysAgo);
   //
   return connection.query(
-    `INSERT INTO answers( animal_number, diagnosis, had_op, op, days_ago, is_well, has_pain, nausea, had_meds, meds, other, image1, image2, image3, image4, pain1, pain2, pain3, pain4, pain5, pain6, pain7, pain8, score, position, sex, date, type, type_cat, name)
-     VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30)`,
+    `INSERT INTO answers( animal_number, diagnosis, had_op, op, days_ago, is_well, has_pain, nausea, had_meds, meds, other, image1, image2, image3, pain1, pain2, pain3, pain4, pain5, pain6, score, position, sex, date, type, type_dog, name, ear_form, nose_form )
+     VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29)`,
 
-    [Question1, Question40, Question401, whichOp, daysAgo, question6, question13, question9, question14, question18, other, array[0].link, array[1].link, array[2].link, array[3].link, question11, question5, question4, question7, question8, question19, question21, question22, Schmerzbewertung, question24, question25, time, type, Question112, question23]
+    [Question1, Question40, Question401, whichOp, daysAgo, question6, question13, question9, question14, question18, other, array[0].link, array[1].link, array[2].link, question11, question5, question4, question17, question22, question21, Schmerzbewertung, question24, question25, time, type, Question112, question23, question1, question26]
   );
 };
 
