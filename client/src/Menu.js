@@ -71,9 +71,9 @@ const MainMenu = () => {
     <div className="main">
       <Link to="./" style={{ textDecoration: "none" }}>
         <Container className="greenContFlex">
-          <div>
-            <img src="../../../../assets/groceries1.png" alt="" />
-          </div>
+          // <div>
+          //   <img src="../../../../assets/groceries1.png" alt="" />
+          // </div>
           <div>neue Umfrage</div>
         </Container>
       </Link>
