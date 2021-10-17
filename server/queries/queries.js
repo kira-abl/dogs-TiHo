@@ -83,13 +83,13 @@ const getData = () => {
   return connection.query('SELECT * FROM answers');
 };
 
-const getImages = () => {
-  return connection.query(`SELECT image1, image2 FROM answers WHERE (image2!='')`);
-};
+// const getImages = () => {
+//   return connection.query(`SELECT image1, image2 FROM answers WHERE (image2!='')`);
+// };
 
 
 module.exports = {
   logMood,
   getData,
-  getImages
+  // getImages
 };
