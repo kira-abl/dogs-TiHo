@@ -235,17 +235,6 @@ console.log(array);
 
 });
 
-// function convert(todos){
-//   converter.json2csvAsync(todos).then(csv => {
-//
-//       // print CSV string
-//       // console.log(csv);
-//
-//       // write CSV to a file
-//       return csv;
-//
-//   }).catch(err => console.log(err));
-// };
 
 app.get("/data", (req, res, next) => {
   console.log("Hit data");
