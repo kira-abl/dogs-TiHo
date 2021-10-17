@@ -16,48 +16,6 @@ function onValueChanged(options) {
     console.log(options.valuesHash);
 }
 
-
-
-
-
-
-// function uploadFile(file, signedRequest) {
-// let headers = new Headers();
-//
-// headers.append('Content-Type', 'application/json');
-// headers.append('Accept', 'application/json');
-// // headers.append('Authorization', 'Basic ' + base64.encode(username + ":" +  password));
-// headers.append('Origin','http://localhost:3000');
-//
-// fetch(signedRequest, {
-//     mode: 'cors',
-//     credentials: 'include',
-//     method: 'POST',
-//     headers: headers,
-//     body: file
-// })
-// .then(response => response.json())
-// .then(json => console.log(json))
-// .catch(error => console.log(error.message));
-// }
-
-// function uploadFile(file, signedRequest, url) {
-//                 const xhr = new XMLHttpRequest();
-//                 xhr.open('PUT', signedRequest);
-//                 console.log('Request', signedRequest);
-//                 xhr.onreadystatechange = () => {
-//                     if (xhr.readyState === 4) {
-//                         if (xhr.status === 200) {
-//                             document.getElementById('preview').src = url;
-//                             document.getElementById('avatar-url').value = url;
-//                         } else {
-//                             alert('Could not upload file.');
-//                         }
-//                     }
-//                 };
-//                 xhr.send(file);
-//             }
-
 function onUploadFiles(survey, options) {
     console.log("Fire!", options.files[0]);
 
