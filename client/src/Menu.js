@@ -43,7 +43,7 @@ const MainMenu = () => {
     };
 
 
-    /////////////////////
+  
 
     const GetFiles = () => {
 
@@ -71,10 +71,8 @@ const MainMenu = () => {
     <div className="main">
       <Link to="./" style={{ textDecoration: "none" }}>
         <Container className="greenContFlex">
-          // <div>
-          //   <img src="../../../../assets/groceries1.png" alt="" />
-          // </div>
-          <div>neue Umfrage</div>
+         
+          <div><br></br>neue<br></br> Umfrage</div>
         </Container>
       </Link>
 
