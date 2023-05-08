@@ -96,7 +96,7 @@ else if (data === "image") {
     ContentEncoding: 'base64', // required
     ContentType: `${data}/${type}` // required. Notice the back ticks
   }
-  // console.log(params);
+  console.log(params);
 
   // The upload() is used instead of putObject() as we'd need the location url and assign that to our user profile/database
   // see: http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#upload-property
@@ -106,8 +106,10 @@ else if (data === "image") {
     const { Location, Key } = await s3.upload(params).promise();
     location = Location;
     key = Key;
+    console.log(location);
+    console.log(key);
   } catch (error) {
-     // console.log(error)
+    console.log(error)
   }
 
   // Save the Location (url) to your database and Key if needs be.
