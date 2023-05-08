@@ -72,7 +72,7 @@ const MainMenu = () => {
       <Link to="./" style={{ textDecoration: "none" }}>
         <Container className="greenContFlex">
          
-          <div><br></br>neue <br></br> Umfrage</div>
+          <div><br></br>neue<br></br> Umfrage</div>
         </Container>
       </Link>
 
